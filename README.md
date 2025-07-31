@@ -1,69 +1,30 @@
-# React + TypeScript + Vite
+# Formulario de Actualización de Información Personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación construida con **React + TypeScript** que permite a los usuarios llenar un formulario de actualización de datos personales. Los registros ingresados se pueden exportar a un archivo **Excel (.xlsx)** desde el frontend, lo que lo hace ideal para capturar y exportar información sin necesidad de un backend.
 
-Currently, two official plugins are available:
+## 🚀 Características principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Formulario interactivo con campos personales como nombre, edad, residencia, etc.
+- Validación de entradas de datos.
+- Exportación de todos los registros ingresados a un archivo `.xlsx`.
+- Diseño responsivo y profesional usando CSS.
+- Almacenamiento en memoria de todos los registros ingresados durante la sesión.
 
-## Expanding the ESLint configuration
+## 🖼️ Vista previa
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+(Agrega aquí una captura de pantalla del formulario funcionando)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tecnologías utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [XLSX (SheetJS)](https://github.com/SheetJS/sheetjs) para exportar los datos
+- HTML5, CSS3 (puede personalizarse con Bootstrap, Tailwind u otros frameworks)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Instalación
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Clona el repositorio:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+   ```bash
+   git clone https://github.com/tuusuario/formulario-datos-personales.git
+   cd formulario-datos-personales
