@@ -10,9 +10,7 @@ Este proyecto es una aplicación construida con **React + TypeScript** que permi
 - Diseño responsivo y profesional usando CSS.
 - Almacenamiento en memoria de todos los registros ingresados durante la sesión.
 
-## 🖼️ Vista previa
 
-(Agrega aquí una captura de pantalla del formulario funcionando)
 
 ## 🛠️ Tecnologías utilizadas
 
